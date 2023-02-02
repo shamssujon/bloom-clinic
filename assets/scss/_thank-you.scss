@@ -1,0 +1,20 @@
+.thank-you-page {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 4rem;
+	background: url("../img/bg/thankyoupage-bg.jpg") no-repeat center center / cover;
+}
+
+.thank-you-section {
+	margin-top: -100px;
+	h1 {
+		font-size: clamp(3.75rem, 2.4107rem + 4.2857vw, 5.625rem);
+	}
+
+	h5 {
+		font-size: clamp(1rem, 0.4643rem + 1.7143vw, 1.75rem);
+		color: #d7b063;
+	}
+}
