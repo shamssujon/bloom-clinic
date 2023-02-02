@@ -37,7 +37,7 @@
 		items: 1,
 		gutter: 20,
 		autoplay: true,
-		rewind: true,
+		rewind: false,
 		controls: false,
 		nav: true,
 		navPosition: "bottom",

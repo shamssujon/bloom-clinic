@@ -78,7 +78,11 @@
 
 	.appointment-form {
 		outline-offset: -12px;
-		padding: 70px;
+		padding: 70px 0;
+
+		.form-content {
+			padding: 0 70px;
+		}
 
 		.submit-btn {
 			padding: 12px 40px;
@@ -99,7 +103,7 @@
 	// Header
 	.header {
 		&.has-bg-image {
-			background: url("../img/bg/header-bg.png") no-repeat left bottom / contain;
+			background: url("../img/bg/header-bg.png") no-repeat left -2rem bottom / contain;
 		}
 
 		.shape {
@@ -108,13 +112,13 @@
 			right: -16rem;
 		}
 
-		.logo-area {
-			margin-bottom: -70px;
-		}
+		// .logo-area {
+		// 	margin-bottom: -70px;
+		// }
 
 		.logo {
 			img {
-				max-width: 180px;
+				max-width: 163px;
 			}
 		}
 	}
@@ -183,7 +187,7 @@
 
 	// Services
 	.services-section {
-		padding: 80px 0 100px;
+		padding: 80px 0 70px;
 
 		.section-header {
 			margin-bottom: 60px;
@@ -199,15 +203,15 @@
 	}
 
 	.service-img {
-		width: 480px;
-		height: 480px;
-		padding: 30px;
+		width: 390px;
+		height: 390px;
+		padding: 25px;
 
 		&::after {
-			top: -27px;
+			top: -45px;
 			right: -64px;
-			width: 258px;
-			height: 258px;
+			width: 207px;
+			height: 207px;
 		}
 	}
 
@@ -231,6 +235,12 @@
 		}
 	}
 
+	.services-carousel {
+		.carousel-item {
+			padding: 3rem 0;
+		}
+	}
+
 	// Appointment
 	.appointment-section {
 		&::before,
@@ -240,7 +250,6 @@
 	}
 
 	.appointment-form {
-		padding: 90px;
 
 		.form-control-lg,
 		.form-select-lg {
@@ -252,7 +261,7 @@
 		}
 
 		.submit-btn {
-			padding: 20px 80px;
+			padding: 13px 64px;
 		}
 	}
 
@@ -366,7 +375,7 @@
 		.carousel-item {
 			.header-img {
 				img {
-					height: 800px;
+					height: 775px;
 				}
 			}
 		}

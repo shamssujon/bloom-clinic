@@ -31,7 +31,7 @@ $font-family-sans-serif: "Montserrat", system-ui, -apple-system, "Segoe UI", Rob
 	"Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-size-base: 1rem;
 $h1-font-size: $font-size-base * 3;
-$h2-font-size: clamp(1rem, 0.0179rem + 3.1429vw, 2.375rem);
+$h2-font-size: clamp(1rem, 0.1518rem + 2.7143vw, 2.1875rem);
 // $h3-font-size:                $font-size-base * 1.75;
 // $h4-font-size:                $font-size-base * 1.5;
 // $h5-font-size:                $font-size-base * 1.25;
@@ -46,6 +46,7 @@ $headings-line-height: 1.375;
 $input-bg: $light;
 $input-color: $primary;
 $input-border-color: $light;
+$input-placeholder-color: $light-gray;
 // $input-border-width: $input-btn-border-width;
 // $input-box-shadow: $box-shadow-inset;
 
@@ -67,6 +68,6 @@ $btn-border-radius-lg: 0;
 
 // blockquote
 $blockquote-margin-y: 0;
-$blockquote-font-size: clamp(0.875rem, 0.2786rem + 1.9084vw, 1.5rem);
+$blockquote-font-size: clamp(0.875rem, 0.5179rem + 1.1429vw, 1.375rem);
 $blockquote-footer-color: null;
 $blockquote-footer-font-size: null;

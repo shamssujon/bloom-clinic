@@ -21,10 +21,6 @@
 		h2 {
 			margin-bottom: 20px;
 		}
-
-		p {
-			font-size: clamp(0.75rem, 0.2143rem + 1.7143vw, 1.5rem);
-		}
 	}
 }
 
@@ -93,15 +89,15 @@
 	h2 {
 		margin-bottom: 15px;
 	}
-	p {
+	p,li {
 		line-height: 1.666;
+		font-size: clamp(0.875rem, 0.6071rem + 0.8571vw, 1.25rem);
 	}
 
 	ul {
 		li {
 			position: relative;
 			padding-left: 20px;
-			font-size: clamp(0.875rem, 0.5179rem + 1.1429vw, 1.375rem);
 
 			&::before {
 				content: "";
