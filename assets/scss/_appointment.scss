@@ -1,0 +1,47 @@
+.appointment-section {
+	position: relative;
+	z-index: 1;
+	padding-top: 75px;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: calc(100% - 100px);
+	}
+
+	&::before {
+		background: url("../img/bg/appointment-bg.jpg") fixed no-repeat center center / cover;
+		z-index: -2;
+	}
+
+	&::after {
+		background: $dark-gray-2;
+		opacity: 0.6;
+		z-index: -1;
+	}
+}
+
+.appointment-form {
+	outline: 1px solid rgba($primary, 0.5);
+	outline-offset: -5px;
+	padding: 30px;
+	box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.15);
+
+	.submit-btn {
+		padding: 10px 40px;
+		font-size: clamp(1rem, 0.4643rem + 1.7143vw, 1.75rem);
+		white-space: nowrap;
+		font-weight: 700;
+		background: #000;
+
+		&:hover,
+		&:focus {
+			background: rgba(#000, 0.9);
+		}
+	}
+}

@@ -1,0 +1,158 @@
+.services-section {
+	padding: 30px 0 50px;
+	position: relative;
+
+	.shape {
+		position: absolute;
+		bottom: calc(100% - 2px);
+		left: 0;
+		right: 0;
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	.section-header {
+		margin-bottom: 30px;
+
+		h2 {
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: clamp(0.75rem, 0.2143rem + 1.7143vw, 1.5rem);
+		}
+	}
+}
+
+.services-carousel {
+	.carousel-item {
+		padding: 1rem 0;
+	}
+}
+
+.service-img {
+	width: 227px;
+	height: 227px;
+	padding: 10px;
+	position: relative;
+	z-index: 1;
+	margin: auto;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		border-radius: 1000px;
+	}
+
+	&::before {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(
+			70deg,
+			rgba($secondary, 0.99608) 0%,
+			rgba($secondary, 1) 27%,
+			rgba(172, 187, 194, 1) 100%
+		);
+		z-index: -1;
+	}
+
+	&::after {
+		top: -14px;
+		right: -30px;
+		width: 120px;
+		height: 120px;
+		background: linear-gradient(
+			-70deg,
+			rgba($secondary, 0.99608) 0%,
+			rgba($secondary, 1) 27%,
+			rgba(172, 187, 194, 1) 100%
+		);
+		z-index: -2;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 1000px;
+	}
+}
+
+.service-description {
+	position: relative;
+	z-index: 1;
+	h2 {
+		margin-bottom: 15px;
+	}
+	p {
+		line-height: 1.666;
+	}
+
+	ul {
+		li {
+			position: relative;
+			padding-left: 20px;
+			font-size: clamp(0.875rem, 0.5179rem + 1.1429vw, 1.375rem);
+
+			&::before {
+				content: "";
+				width: 12px;
+				height: 2px;
+				display: inline-block;
+				background: $primary;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%) translateX(-20px);
+			}
+		}
+	}
+}
+
+.service-carousel-wrapper {
+	position: relative;
+
+	.carousel-controls {
+		button {
+			position: absolute;
+			background: transparent;
+			border: none;
+			outline: none;
+			color: $primary;
+			opacity: 0.3;
+			display: grid;
+			place-content: center;
+			transition: 0.15s;
+			padding: 5px;
+			top: 104px;
+			width: 45px;
+			height: 45px;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			svg {
+				fill: currentColor;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.control-prev {
+			left: 0;
+		}
+
+		.control-next {
+			right: 0;
+		}
+	}
+}

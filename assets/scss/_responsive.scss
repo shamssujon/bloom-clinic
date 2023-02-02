@@ -1,0 +1,374 @@
+@include media-breakpoint-up(md) {
+	// Header
+	.header {
+		.shape {
+			width: 60rem;
+		}
+		.logo-area {
+			padding-top: 40px;
+		}
+		.logo {
+			img {
+				max-width: 150px;
+			}
+		}
+	}
+
+	.header-carousel {
+		.carousel-item {
+			.header-img {
+				img {
+					height: 550px;
+				}
+			}
+		}
+	}
+
+	// Services
+	.services-section {
+		padding: 50px 0 70px;
+	}
+
+	.services-carousel {
+		.carousel-item {
+			padding: 2rem 0;
+		}
+	}
+
+	.service-img {
+		width: 300px;
+		height: 300px;
+		padding: 20px;
+
+		&::after {
+			top: -20px;
+			right: -50px;
+			width: 180px;
+			height: 180px;
+		}
+	}
+
+	.service-carousel-wrapper {
+		.carousel-controls {
+			button {
+				top: 150px;
+				width: 60px;
+				height: 60px;
+			}
+
+			.control-prev {
+				left: 0;
+			}
+
+			.control-next {
+				right: 0;
+			}
+		}
+	}
+
+	// Appointment
+	.appointment-section {
+		padding-top: 120px;
+
+		&::before,
+		&::after {
+			height: 70%;
+		}
+	}
+
+	.appointment-form {
+		outline-offset: -12px;
+		padding: 70px;
+
+		.submit-btn {
+			padding: 12px 40px;
+		}
+	}
+
+	// Testimonial
+	.testimonial-section {
+		margin-top: -230px;
+		padding-top: calc(230px + 100px);
+		padding-bottom: 80px;
+		background-size: contain;
+		background-position: center bottom -50%;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	// Header
+	.header {
+		&.has-bg-image {
+			background: url("../img/bg/header-bg.png") no-repeat left bottom / contain;
+		}
+
+		.shape {
+			transform: none;
+			width: 57rem;
+			right: -16rem;
+		}
+
+		.logo-area {
+			margin-bottom: -70px;
+		}
+
+		.logo {
+			img {
+				max-width: 180px;
+			}
+		}
+	}
+
+	.header-carousel {
+		.carousel-item {
+			.header-title {
+				margin-bottom: 0;
+				margin-top: 100px;
+
+				h2 {
+					color: white;
+				}
+			}
+
+			.header-img {
+				img {
+					height: 700px;
+				}
+			}
+		}
+	}
+
+	// Services
+	.service-description {
+		ul {
+			li {
+				&::before {
+					height: 3px;
+				}
+			}
+		}
+	}
+
+	// Testimonial
+	.testimonial-section {
+		margin-top: -330px;
+		padding-top: calc(330px + 150px);
+		padding-bottom: 80px;
+		background-size: 150%;
+		background-position: center bottom -25rem;
+
+		.section-header {
+			margin-bottom: 40px;
+
+			.quote-icon {
+				left: 25%;
+				bottom: -1rem;
+				width: 200px;
+			}
+		}
+	}
+
+	.testimonial-content {
+		margin-bottom: 40px;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	// Header
+	.header {
+		.shape {
+			width: 65rem;
+		}
+	}
+
+	// Services
+	.services-section {
+		padding: 80px 0 100px;
+
+		.section-header {
+			margin-bottom: 60px;
+
+			h2 {
+				margin-bottom: 30px;
+			}
+		}
+
+		.shape {
+			bottom: 98%;
+		}
+	}
+
+	.service-img {
+		width: 480px;
+		height: 480px;
+		padding: 30px;
+
+		&::after {
+			top: -27px;
+			right: -64px;
+			width: 258px;
+			height: 258px;
+		}
+	}
+
+	.service-carousel-wrapper {
+		.carousel-controls {
+			button {
+				top: 50%;
+				transform: translateY(-50%);
+				width: 80px;
+				height: 80px;
+				padding: 0;
+			}
+
+			.control-prev {
+				left: -2rem;
+			}
+
+			.control-next {
+				right: -2rem;
+			}
+		}
+	}
+
+	// Appointment
+	.appointment-section {
+		&::before,
+		&::after {
+			height: 60%;
+		}
+	}
+
+	.appointment-form {
+		padding: 90px;
+
+		.form-control-lg,
+		.form-select-lg {
+			padding: 1rem 2rem;
+		}
+
+		.form-select {
+			background-size: 30px 18px;
+		}
+
+		.submit-btn {
+			padding: 20px 80px;
+		}
+	}
+
+	// Testimonial
+	.testimonial-section {
+		margin-top: -370px;
+		padding-top: calc(370px + 200px);
+		padding-bottom: 100px;
+		background-size: 150%;
+		background-position: center bottom -30rem;
+
+		.tns-nav {
+			margin-top: 2rem;
+			gap: 6px;
+
+			button {
+				width: 11px;
+				height: 11px;
+			}
+		}
+	}
+
+	.testimonial-content {
+		margin-bottom: 50px;
+	}
+}
+
+@media (min-width: 1400px) {
+	// Header
+	.header {
+		.shape {
+			width: auto;
+			right: -12rem;
+		}
+	}
+
+	.header-carousel {
+		.carousel-item {
+			.header-man-img {
+				img {
+					margin-left: -6rem;
+				}
+			}
+		}
+	}
+
+	// Services
+	.service-carousel-wrapper {
+		.carousel-controls {
+			button {
+				width: 80px;
+				height: 80px;
+			}
+
+			.control-prev {
+				left: -8rem;
+			}
+
+			.control-next {
+				right: -8rem;
+			}
+		}
+	}
+
+	// Testimonial
+	.testimonial-section {
+		margin-top: -370px;
+		padding-top: calc(370px + 270px);
+		padding-bottom: 120px;
+		background-size: 200%;
+		background-position: left -35rem top 4rem;
+
+		.section-header {
+			margin-bottom: 60px;
+
+			.quote-icon {
+				left: 0;
+				bottom: -2rem;
+				width: 280px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1600px) {
+	// Header
+	.header {
+		.shape {
+			right: -8rem;
+		}
+	}
+	.header-carousel {
+		.carousel-item {
+			.header-img {
+				img {
+					height: 750px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1900px) {
+	// Header
+	.header {
+		.shape {
+			right: -2rem;
+		}
+	}
+	.header-carousel {
+		.carousel-item {
+			.header-img {
+				img {
+					height: 800px;
+				}
+			}
+		}
+	}
+}
