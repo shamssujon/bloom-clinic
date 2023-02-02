@@ -1,0 +1,17 @@
+{
+  "name": "bloom-clinic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css-purge": "purgecss --keyframes --css assets/css/style.min.css --content **/*.html assets/js/**/*.js -o assets/css/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "purgecss": "^5.0.0"
+  }
+}
